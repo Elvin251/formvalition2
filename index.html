@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form və Cədvəl</title>
+   <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h2>İstifadəçi Məlumatları</h2>
+    <label>Adınızı yazın</label>
+    <input type="text" id="name" minlength="3">
+    <p >Ad en azi 3 herf olmalidi</p>
+
+    
+    <label>Yaşınızı yazın</label>
+    <input type="number" id="age" min="18">
+    <p >Yas en azi 18 olmalidi</p>
+    
+    <button onclick="addUser()">Submit</button>
+    
+    <table >
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Userage</th>
+                <th>Operation</th>
+            </tr>
+        </thead>
+        <tbody id="userTable">
+
+        </tbody>
+    </table>
+    
+    <script src="./app.js">
+       
+    </script>
+</body>
+</html>
